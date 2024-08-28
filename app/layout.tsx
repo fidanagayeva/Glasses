@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Provider } from "./_provide/SwrProvide";
 import toast, {Toaster} from "react-hot-toast";
+import Layout from "./_featured/layout/layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
+          <Layout>
           <Toaster 
           position="top-right"
           toastOptions={{
@@ -27,6 +29,7 @@ export default function RootLayout({
           }}
           />
           <main>{children}</main>
+          </Layout>
         </Provider>
       </body>
     </html>

@@ -27,7 +27,7 @@ export default function Login() {
                     setCookie("auth", res?.user?.accessToken, {
                         maxAge: 30 * 24 * 60 * 60,
                     });
-                    router.push("dashbord");
+                    router.push("dashboard");
                 }
             }).catch((err) => {
                 toast.error(err.message);

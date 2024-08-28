@@ -85,7 +85,7 @@ export default function Register() {
                         type="submit"
                         className="w-full flex items-center justify-center bg-pink-500 mt-6 py-3 rounded-full text-white font-bold hover:bg-pink-600 transition duration-300 ease-in-out transform hover:scale-110"
                     >
-                        {loading ? <CustomLoadingSpinner /> : "Sign In"}
+                        {loading ? <CustomLoadingSpinner /> : "Register"}
                     </button>
                     <span className="text-sm mt-4 block text-center text-brown-500 hover:text-pink-500 cursor-pointer transition duration-300 ease-in-out">Forgot Password?</span>
                 </form>
