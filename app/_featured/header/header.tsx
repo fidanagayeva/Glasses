@@ -72,7 +72,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center mx-auto md:mx-0">
-          <img src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="Woodmart Logo" className="h-8 mr-4" />
+          <img src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="" className="h-8 mr-4" />
         </div>
 
         <div className="flex items-center space-x-4 relative md:hidden">
