@@ -32,28 +32,28 @@ export default function Register() {
         },
     });
     return (
-        <div className="h-screen flex">
-            <div className="relative overflow-hidden flex w-1/2 bg-gradient-to-tr from-pink-200 to-cream-200 justify-around items-center hidden md:flex">
-                <div className="animate-slide-in">
-                    <h1 className="text-brown-800 font-extrabold text-5xl font-serif">Pastel Finance</h1>
-                    <p className="text-brown-600 mt-3 text-lg animate-fade-in">Your cozy financial haven</p>
-                    <button type="submit" className="block w-32 bg-brown-300 text-brown-800 mt-6 py-2 rounded-full font-bold hover:bg-brown-400 transition duration-300 ease-in-out transform hover:skew-y-3 hover:scale-110">
-                        Explore
-                    </button>
+        <div className="h-screen flex flex-col md:flex-row">
+            <div className="relative overflow-hidden flex md:w-1/2 w-full h-1/2 md:h-full bg-gradient-to-tr from-pink-200 to-cream-200 justify-around items-center">
+                <div className="animate-slide-in flex flex-col items-center">
+                    <img
+                        src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg"
+                        alt=""
+                        className="w-3/4 h-auto transition duration-300 ease-in-out transform hover:scale-110 hover:-rotate-6"
+                    />
                 </div>
                 <div className="absolute -bottom-32 -left-40 w-96 h-96 bg-pink-100 rounded-full opacity-50 animate-pulse-slow"></div>
                 <div className="absolute -bottom-40 -left-20 w-96 h-96 bg-cream-100 rounded-full opacity-50 animate-zoom-in-out"></div>
                 <div className="absolute -top-40 -right-0 w-96 h-96 bg-pink-100 rounded-full opacity-50 animate-pulse-slow"></div>
                 <div className="absolute -top-20 -right-20 w-96 h-96 bg-cream-100 rounded-full opacity-50 animate-zoom-in-out"></div>
             </div>
-            <div className="flex md:w-1/2 justify-center py-12 items-center bg-cream-100">
+            <div className="flex md:w-1/2 w-full h-1/2 md:h-full justify-center py-12 items-center bg-cream-100">
                 <form
                     onSubmit={(e) => {
                         formik.handleSubmit(e);
                     }}
-                    className="bg-white p-8 rounded-lg shadow-lg animate-slide-up"
+                    className="bg-white p-8 rounded-lg shadow-lg animate-slide-up w-full max-w-sm"
                 >
-                    <h1 className="text-brown-800 font-extrabold text-3xl mb-2">Welcome Back!</h1>
+                    <h1 className="text-brown-800 font-extrabold text-2xl md:text-3xl mb-2">Welcome Back!</h1>
                     <p className="text-sm font-light text-brown-500 mb-8">It's great to see you again</p>
                     <div className="flex items-center border-2 py-3 px-4 rounded-full mb-4 transition-all duration-300 hover:border-pink-400 focus-within:border-pink-400">
                         <input
@@ -91,5 +91,6 @@ export default function Register() {
                 </form>
             </div>
         </div>
+
     );
 }
