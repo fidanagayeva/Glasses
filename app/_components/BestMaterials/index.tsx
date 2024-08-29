@@ -2,7 +2,7 @@ import React from 'react';
 
 const BestMaterials = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-between items-center mt-[3rem] mb-[3.5rem] px-4 md:px-12 gap-y-8 md:gap-x-8">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-[3rem] mb-[7rem] px-4 md:px-12 gap-y-8 md:gap-x-8">
             <div className="flex items-center text-left">
                 <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/06/gl-best-materials.svg" alt="" className="mr-4 mb-0" />
                 <div>
