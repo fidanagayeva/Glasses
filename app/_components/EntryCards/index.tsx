@@ -13,7 +13,7 @@ const EntryCards = () => {
         </div>
         <div className="absolute top-1/4 left-4 md:left-8 text-left space-y-4">
           <p className="text-sm text-gray-500">WOMAN SUNGLASSES</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Garamond</h2>
+          <h2 className="text-3xl md:text-4xl">Garamond</h2>
           <a
             href="#"
             className="mt-2 inline-block text-sm font-semibold text-black"
@@ -33,7 +33,7 @@ const EntryCards = () => {
         </div>
         <div className="absolute top-1/4 left-4 md:left-8 text-left space-y-4">
           <p className="text-sm text-gray-500">MAN SUNGLASSES</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Wayfarer</h2>
+          <h2 className="text-3xl md:text-4xl ">Wayfarer</h2>
           <a
             href="#"
             className="mt-2 inline-block text-sm font-semibold text-black"
