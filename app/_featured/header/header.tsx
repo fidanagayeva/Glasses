@@ -66,7 +66,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center py-6 px-8 bg-white border-b">
+      <div className="flex justify-between items-center py-6 px-8 bg-white border-b ">
         <div className="flex items-center md:hidden">
           <FiMenu className="text-2xl cursor-pointer" onClick={toggleMenuSidebar} />
         </div>
