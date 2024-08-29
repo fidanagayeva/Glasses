@@ -8,6 +8,7 @@ import BestGlasses from '../_components/BestGlasses';
 import GordonGlasses from '../_components/GordonGlasses';
 import BestMaterials from '../_components/BestMaterials';
 import BestSelection from '../_components/BestSelection';
+import LatestArticles from '../_components/LatestArticles';
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <GordonGlasses />
       <BestMaterials />
       <BestSelection />
+      <LatestArticles />
     </div>
   );
 }
