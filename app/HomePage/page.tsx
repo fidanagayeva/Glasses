@@ -4,6 +4,7 @@ import React from 'react';
 import Swiper from '../_components/Swiper';
 import EntryCrads from '../_components/EntryCards'; 
 import BestsellerProducts from '../_components/BestsellerProducts'; 
+import BestGlasses from '../_components/BestGlasses';
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Swiper />
       <EntryCrads />
       <BestsellerProducts />
+      <BestGlasses />
     </div>
   );
 }
