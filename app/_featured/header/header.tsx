@@ -87,10 +87,20 @@ const Header = () => {
             SHOP <FiChevronDown className="ml-1 text-gray-500" />
           </a>
           <div className="relative">
-            <a onClick={() => navigateTo('/BlogPage')} className="hover:text-gray-700 flex items-center" onMouseEnter={() => document.getElementById('dropdown').classList.remove('hidden')} onMouseLeave={() => document.getElementById('dropdown').classList.add('hidden')}>
+            <a
+              onClick={() => navigateTo('/BlogPage')}
+              className="hover:text-gray-700 flex items-center"
+              onMouseEnter={() => document.getElementById('dropdown').classList.remove('hidden')}
+              onMouseLeave={() => document.getElementById('dropdown').classList.add('hidden')}
+            >
               BLOG <FiChevronDown className="ml-1 text-gray-500" />
             </a>
-            <div id="dropdown" className="hidden absolute left-0 mt-2 w-[650px] bg-white border rounded shadow-lg flex" onMouseEnter={() => document.getElementById('dropdown').classList.remove('hidden')} onMouseLeave={() => document.getElementById('dropdown').classList.add('hidden')}>
+            <div
+              id="dropdown"
+              className="hidden absolute left-0 mt-2 w-[650px] bg-white shadow-lg flex z-50"
+              onMouseEnter={() => document.getElementById('dropdown').classList.remove('hidden')}
+              onMouseLeave={() => document.getElementById('dropdown').classList.add('hidden')}
+            >
               <div className="p-4 w-[30%]">
                 <div className="text-gray-800 font-bold mb-4">BLOG TYPES</div>
                 <ul className="space-y-2">
@@ -154,6 +164,7 @@ const Header = () => {
               </div>
             </div>
           </div>
+
           <a href="#" className="hover:text-gray-700 flex items-center">
             PAGES <FiChevronDown className="ml-1 text-gray-500" />
           </a>
@@ -174,7 +185,7 @@ const Header = () => {
             {user && (
               <div
                 id="userDropdown"
-                className="hidden absolute right-[-5rem] mt-2 w-48 bg-white border rounded shadow-lg p-4 opacity-100 transition-opacity duration-300"
+                className="hidden absolute right-[-5rem] mt-2 w-48 bg-white border rounded shadow-lg p-4 z-50 opacity-100 transition-opacity duration-300" // Added z-index here
                 onMouseEnter={() => document.getElementById('userDropdown').classList.remove('hidden')}
                 onMouseLeave={() => document.getElementById('userDropdown').classList.add('hidden')}
               >
@@ -188,6 +199,7 @@ const Header = () => {
               </div>
             )}
           </div>
+
           <FiShoppingCart className="text-lg cursor-pointer" onClick={toggleSidebar} />
           <span className="text-sm">$0.00</span>
         </div>
@@ -211,7 +223,7 @@ const Header = () => {
         </div>
         <div className="p-4">
           <ul>
-          <li className="py-2 border-b">
+            <li className="py-2 border-b">
               <a href="#" className="block text-gray-800 hover:text-blue-500">HOME</a>
             </li>
             <li className="py-2 border-b">

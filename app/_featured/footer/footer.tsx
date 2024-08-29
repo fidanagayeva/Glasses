@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 w-full fixed bottom-0">
+    <footer className="bg-white border-t border-gray-200 w-full  bottom-0">
       <div className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="mb-6">
           <img src="https://woodmart.xtemos.com/wp-content/uploads/2018/08/wood-logo-dark.svg" alt="" className="mb-4 h-8" />

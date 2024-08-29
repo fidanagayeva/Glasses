@@ -1,12 +1,14 @@
+'use client';  
+
 import React from 'react';
+import Swiper from '../_components/Swiper';  
 
 const HomePage = () => {
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the Home page.</p>
+      <Swiper />
     </div>
   );
-};
+}
 
 export default HomePage;
