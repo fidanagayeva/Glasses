@@ -6,6 +6,7 @@ import EntryCrads from '../_components/EntryCards';
 import BestsellerProducts from '../_components/BestsellerProducts'; 
 import BestGlasses from '../_components/BestGlasses';
 import GordonGlasses from '../_components/GordonGlasses';
+import BestMaterials from '../_components/BestMaterials';
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <BestsellerProducts />
       <BestGlasses />
       <GordonGlasses />
+      <BestMaterials />
     </div>
   );
 }
