@@ -9,7 +9,7 @@ const BlogPage = () => {
       <Blog />
       <BlogPagination />
       <BlogCarusel />
-    </div>
+    </div> 
   );
 };
 

@@ -168,8 +168,8 @@ const Header = () => {
           <a href="#" className="hover:text-gray-700 flex items-center">
             PAGES <FiChevronDown className="ml-1 text-gray-500" />
           </a>
-          <a href="#" className="hover:text-gray-700 flex items-center">
-            ELEMENTS <FiChevronDown className="ml-1 text-gray-500" />
+          <a onClick={() => navigateTo('/ContactPage')} className="hover:text-gray-700 flex items-center cursor-pointer">
+            Contact Us <FiChevronDown className="ml-1 text-gray-500" />
           </a>
           <a href="#" className="hover:text-gray-700">BUY</a>
         </div>
