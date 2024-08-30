@@ -1,10 +1,12 @@
 import React from 'react';
+import Blog from '../_components/Blog';
+import BlogPagination from '../_components/BlogPagination';
 
 const BlogPage = () => {
   return (
     <div>
-      <h1>Welcome to the Blog Page</h1>
-      <p>This is the Blog page.</p>
+      <Blog />
+      <BlogPagination />
     </div>
   );
 };

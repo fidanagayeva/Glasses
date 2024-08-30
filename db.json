@@ -168,6 +168,221 @@
           "colors": ["#000", "#ddd"]
         }
       ]
+    },
+    "blogs": [
+    {
+      "id": 1,
+      "date": "23 JUL",
+      "title": "Seating collection inspiration",
+      "author": "S. Rogers",
+      "category": "DESIGN TRENDS, FURNITURE",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-9.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum du..."
+    },
+    {
+      "id": 2,
+      "date": "23 JUL",
+      "title": "Minimalist design furniture 2024",
+      "author": "S. Rogers",
+      "category": "DESIGN TRENDS, FURNITURE",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-1.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A taciti cras scelerisque scelerisque gravida natoque nulla vestibulum turpis primis adipiscing faucibus scelerisque adi..."
+    },
+    {
+      "id": 3,
+      "date": "15 AUG",
+      "title": "Green interior design inspiration",
+      "author": "J. Doe",
+      "category": "DESIGN TRENDS,FURNITURE",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-7.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "Vivamus enim sagittis aptent hac mi dui a per aptent suspendisse cras odio bibendum augue rhoncus laoreet dui praesent s..."
+    },
+    {
+      "id": 4,
+      "date": "15 AUG",
+      "title": "Reinterprets the classic bookshelf",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-3.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "Aliquet parturient scele risque scele risque nibh pretium parturient suspendisse platea sapien torquent feugiat parturie..."
+    },
+    {
+      "id": 5,
+      "date": "15 AUG",
+      "title": "Creative water features and exterior",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-13.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "Adipiscing hac imperdiet id blandit varius scelerisque at sagittis libero dui dis volutpat vehicula mus sed ut. Lacinia ..."
+    },
+    {
+      "id": 6,
+      "date": "15 AUG",
+      "title": "Sweet seat: functional seat for IT folks",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-11.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 7,
+      "date": "15 AUG",
+      "title": "Furniture that explores wood as a material",
+      "author": "J. Doe",
+      "category": "INTERIOR, TRENDS",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-15.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 8,
+      "date": "15 AUG",
+      "title": "The big design: Wall likes pictures",
+      "author": "J. Doe",
+      "category": "INTERIOR, TRENDS",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-8.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 9,
+      "date": "15 AUG",
+      "title": "New home decor from John Doerson",
+      "author": "J. Doe",
+      "category": "INTERIOR, TRENDS",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-5.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 10,
+      "date": "15 AUG",
+      "title": "Exploring Atlanta’s modern homes",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-14.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 11,
+      "date": "15 AUG",
+      "title": "Exterior ideas: 10 colored garden seats",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-12.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 12,
+      "date": "15 AUG",
+      "title": "Collar brings back coffee brewing ritual",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-grid-2.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 13,
+      "date": "15 AUG",
+      "title": "Minimalist Japanese-inspired furniture",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-17.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 14,
+      "date": "15 AUG",
+      "title": "A flat-picked chair made of a seat and sticks",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-18.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 15,
+      "date": "15 AUG",
+      "title": "Nature-inspired outdoor seating",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-16.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 16,
+      "date": "15 AUG",
+      "title": "A companion for extra sleeping",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-12.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },  {
+      "id": 17,
+      "date": "15 AUG",
+      "title": "Outdoor seating collection inspiration",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-11.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 18,
+      "date": "15 AUG",
+      "title": "Wooden letters decor by famous designer",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-13.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 19,
+      "date": "15 AUG",
+      "title": "Light seats made from Woodmart factory",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-2.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 20,
+      "date": "15 AUG",
+      "title": "Woodmart opens a concept store highlightings",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-3.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 21,
+      "date": "15 AUG",
+      "title": "A light-filled loft in New York city",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-6.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 22,
+      "date": "15 AUG",
+      "title": "5 design trends in furniture this season",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-17.jpg.webp",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 23,
+      "date": "15 AUG",
+      "title": "Yellow/blue design concept by Don Moerson",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-15.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
+    },
+    {
+      "id": 24,
+      "date": "15 AUG",
+      "title": "Modular seating and table system",
+      "author": "J. Doe",
+      "image": "https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-14.jpg",
+      "avatar": "https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp",
+      "excerpt": "A sed a risusat luctus esta anibh rhoncus hendrerit blandit nam rutrum sitmiad hac. Cras a vestibulum a varius adipiscin..."
     }
+  ]
   }
   
