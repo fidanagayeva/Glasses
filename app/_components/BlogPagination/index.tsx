@@ -4,60 +4,65 @@ import React, { useState, useEffect } from "react";
 import { FaComment, FaShare } from "react-icons/fa";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import Link from 'next/link';
 
 const BlogCard = ({ isLoading, data }) => {
   return (
-    <div className="max-w-[25rem] rounded overflow-hidden shadow-lg mt-7 mb-6 group">
-      {isLoading ? (
-        <Skeleton height={300} />
-      ) : (
-        <>
-          <div className="relative">
-            <div className="absolute top-4 left-4 bg-white text-center py-2 px-4 z-10">
-              <p className="text-sm font-bold">{data.date.split(' ')[0]}</p>
-              <p className="text-xs text-gray-500">{data.date.split(' ')[1]}</p>
-            </div>
-            <img
-              className="w-full transition duration-300 ease-in-out group-hover:brightness-50"
-              src={data.image}
-              alt=""
-            />
-            <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="flex space-x-2">
-                <div className="w-2.5 h-2.5 bg-white rounded-full animate-move-circle"></div>
-                <div className="w-2.5 h-2.5 bg-white rounded-full animate-move-circle delay-150"></div>
-                <div className="w-2.5 h-2.5 bg-white rounded-full animate-move-circle delay-300"></div>
+    <Link href={`/blogdetail/${data.id}`}>
+      <div className="max-w-[25rem] h-[32rem] rounded overflow-hidden shadow-lg mt-7 mb-6 group cursor-pointer">
+        {isLoading ? (
+          <Skeleton height={300} duration={5} />
+        ) : (
+          <>
+            <div className="relative h-[50%]">
+              <div className="absolute top-4 left-4 bg-white text-center py-2 px-4 z-10">
+                <p className="text-sm font-bold">{data.date.split(' ')[0]}</p>
+                <p className="text-xs text-gray-500">{data.date.split(' ')[1]}</p>
+              </div>
+              <img
+                className="w-full h-full object-cover transition duration-300 ease-in-out group-hover:brightness-50"
+                src={data.image}
+                alt=""
+              />
+              <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="flex space-x-2">
+                  <div className="w-2.5 h-2.5 bg-white rounded-full animate-move-circle"></div>
+                  <div className="w-2.5 h-2.5 bg-white rounded-full animate-move-circle delay-150"></div>
+                  <div className="w-2.5 h-2.5 bg-white rounded-full animate-move-circle delay-300"></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="p-4">
-            <div className="flex justify-around mb-2">
-              <span className="absolute bottom-[7%] h-[2rem] p-1 bg-blue-200 text-white text-[0.9rem] text-center z-20 whitespace-nowrap overflow-hidden text-ellipsis transform translate-y-1/2">
-                {data.category}
-              </span>
-            </div>
-            <div className="font-normal text-[1.3rem] mb-2 text-center">{data.title}</div>
-            <div className="flex justify-center items-center mb-4">
-              <div className="flex items-center">
-                <p className="text-gray-300 text-xs mr-2">By</p>
-                <img className="w-6 h-6 rounded-full mr-2" src={data.avatar} alt="" />
-                <p className="text-gray-300 text-xs leading-none">{data.author}</p>
+            <div className="p-4 h-[50%] flex flex-col justify-between">
+              <div>
+                <div className="flex justify-around mb-2">
+                  <span className="absolute bottom-[8%] h-[2rem] p-1 bg-blue-200 text-white text-[0.9rem] text-center z-20 whitespace-nowrap overflow-hidden text-ellipsis transform translate-y-1/2">
+                    {data.category}
+                  </span>
+                </div>
+                <div className="font-normal text-[1.3rem] mb-2 text-center">{data.title}</div>
+                <div className="flex justify-center items-center mb-4">
+                  <div className="flex items-center">
+                    <p className="text-gray-300 text-xs mr-2">By</p>
+                    <img className="w-6 h-6 rounded-full mr-2" src={data.avatar} alt="" />
+                    <p className="text-gray-300 text-xs leading-none">{data.author}</p>
+                  </div>
+                  <div className="flex">
+                    <FaComment className="text-gray-300 mx-2" />
+                    <FaShare className="text-gray-300 mx-2" />
+                  </div>
+                </div>
+                <p className="text-gray-400 text-[0.8rem] mb-4 text-center">{data.excerpt}</p>
               </div>
-              <div className="flex">
-                <FaComment className="text-gray-300 mx-2" />
-                <FaShare className="text-gray-300 mx-2" />
+              <div className="text-center mt-auto">
+                <a href="#" className="text-blue-300 hover:text-blue-700 text-sm font-semibold">
+                  CONTINUE READING
+                </a>
               </div>
             </div>
-            <p className="text-gray-400 text-[0.8rem] mb-4 text-center">{data.excerpt}</p>
-            <div className="text-center">
-              <a href="#" className="text-blue-300 hover:text-blue-700 text-sm font-semibold">
-                CONTINUE READING
-              </a>
-            </div>
-          </div>
-        </>
-      )}
-    </div>
+          </>
+        )}
+      </div>
+    </Link>
   );
 };
 
@@ -72,9 +77,13 @@ const BlogCardGrid = () => {
         const response = await fetch("http://localhost:3001/blogs");
         const data = await response.json();
         setBlogData(data);
+
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1000); 
+
       } catch (error) {
         console.error("Error fetching data:", error);
-      } finally {
         setIsLoading(false);
       }
     };
