@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { FiMaximize } from 'react-icons/fi';
 
@@ -20,7 +22,7 @@ const Map = () => {
                 title="Google Map"
             ></iframe>
 
-            <div className="absolute bottom-2 left-2 bg-white p-5 shadow-md text-left max-w-xs">
+            <div className="absolute bottom-24 left-20 bg-white p-5 shadow-md text-left max-w-xs">
                 <p className="text-gray-400 mb-2">OUR STORES</p>
                 <h3 className="m-0 mb-2 text-lg">VISIT OUR NEW STORE IN NEW YORK</h3>
                 <p className="m-0 mb-2 text-sm text-gray-400">294 Bay Meadows Ave.<br />Bay Shore, NY 11706</p>
