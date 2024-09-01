@@ -14,7 +14,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     const showpage = !nopages.includes(path)
 
-
   return (
     <div>
      { showpage && <Header />}

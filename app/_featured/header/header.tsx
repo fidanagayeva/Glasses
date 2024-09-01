@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect, useRef } from 'react';
 import { FiSearch, FiUser, FiShoppingCart, FiChevronDown, FiMenu } from 'react-icons/fi';
 import { useRouter } from 'next/navigation';
@@ -7,6 +5,7 @@ import { setCookie } from 'cookies-next';
 import { signOut } from '@firebase/auth';
 import { auth } from '../../_firebase/config';
 import toast from 'react-hot-toast';
+import CartSidebar from '../sidebar/CartSidebar';
 
 const Header = () => {
   const [user, setUser] = useState(null);
@@ -46,10 +45,6 @@ const Header = () => {
 
   const handleCloseSearch = () => {
     setShowSearchOverlay(false);
-  };
-
-  const toggleUserDropdown = (state) => {
-    setUserDropdownVisible(state);
   };
 
   const toggleSidebar = () => {
@@ -171,7 +166,7 @@ const Header = () => {
           <a onClick={() => navigateTo('/ContactPage')} className="hover:text-gray-700 flex items-center cursor-pointer">
             Contact Us <FiChevronDown className="ml-1 text-gray-500" />
           </a>
-          <a href="#" className="hover:text-gray-700">BUY</a>
+          <a onClick={() => navigateTo('/AdminPage')}  className="hover:text-gray-700">ADMIN</a>
         </div>
 
         <div className="hidden md:flex items-center space-x-4 relative">
@@ -185,7 +180,7 @@ const Header = () => {
             {user && (
               <div
                 id="userDropdown"
-                className="hidden absolute right-[-5rem] mt-2 w-48 bg-white border rounded shadow-lg p-4 z-50 opacity-100 transition-opacity duration-300" // Added z-index here
+                className="hidden absolute right-[-5rem] mt-2 w-48 bg-white border rounded shadow-lg p-4 z-50 opacity-100 transition-opacity duration-300"
                 onMouseEnter={() => document.getElementById('userDropdown').classList.remove('hidden')}
                 onMouseLeave={() => document.getElementById('userDropdown').classList.add('hidden')}
               >
@@ -205,18 +200,11 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg z-50 transform transition-transform duration-700 ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <div className="p-4 flex items-center justify-between border-b">
-          <h2 className="text-lg font-semibold">Shopping cart</h2>
-          <button onClick={toggleSidebar} className="text-gray-500 text-xl">&times;</button>
-        </div>
-        <div className="p-4">
-          <p className="text-center text-gray-600">No products in the cart.</p>
-          <button className="mt-4 w-full bg-blue-500 text-white py-2 rounded">RETURN TO SHOP</button>
-        </div>
-      </div>
+      <CartSidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
-      <div className={`fixed top-0 left-0 h-full w-80 bg-white shadow-lg z-50 transform transition-transform duration-700 ${isMenuSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div
+        className={`fixed top-0 left-0 h-full w-80 bg-white shadow-lg z-50 transform transition-transform duration-700 ${isMenuSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
+      >
         <div className="p-4 flex items-center justify-between border-b">
           <h2 className="text-lg font-semibold">Menu</h2>
           <button onClick={toggleMenuSidebar} className="text-gray-500 text-xl">&times;</button>
@@ -248,12 +236,12 @@ const Header = () => {
         </div>
       </div>
 
-      {(isSidebarOpen || isMenuSidebarOpen) && (
-        <div className="fixed inset-0 bg-black opacity-50 z-40" onClick={isSidebarOpen ? toggleSidebar : toggleMenuSidebar}></div>
+      {isMenuSidebarOpen && (
+        <div className="fixed inset-0 bg-black opacity-50 z-40" onClick={toggleMenuSidebar}></div>
       )}
 
       {showSearchOverlay && (
-        <div className="fixed top-[7rem] left-0 right-0 bg-white flex flex-col items-center justify-start z-40 h-[calc(100%-70px)] animate-slide-up">
+        <div className="fixed top-[5rem] left-0 right-0 bg-white flex flex-col items-center justify-start z-40 h-[calc(100%-70px)] animate-slide-up">
           <div className="flex items-center justify-between w-full max-w-4xl px-4">
             <h1 className="text-4xl font-semibold flex-grow">
               <input

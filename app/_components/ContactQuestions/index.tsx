@@ -105,7 +105,7 @@ Aliquam quam at et in ipsum at venenatis a eget dignissim aliquam tincidunt ultr
                     </div>
                     <button
                         type="submit"
-                        className="px-4 py-2 bg-gray-100 text-black hover:bg-gray-700 transition-colors"
+                        className="px-4 py-2 bg-gray-100 text-black hover:bg-gray-500 transition-colors"
                     >
                         Ask a Question
                     </button>

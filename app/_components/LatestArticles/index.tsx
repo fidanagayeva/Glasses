@@ -24,7 +24,7 @@ const LatestArticles = () => {
             >
                 <SwiperSlide>
                     <div className="relative bg-white mb-[3rem] overflow-hidden">
-                        <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/06/gl-blog-img-1.jpg.webp" alt="Reinterprets the classic bookshelf" className="w-[17rem] h-[23rem] object-cover mx-auto md:mx-0" />
+                        <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/06/gl-blog-img-1.jpg.webp" alt="" className="w-[17rem] h-[23rem] object-cover mx-auto md:mx-0" />
                         <div className="absolute top-4 left-4 text-center bg-white px-3 py-2 h-[3rem] shadow">
                             <p className="text-sm font-semibold">23 JUL</p>
                         </div>
@@ -49,7 +49,7 @@ const LatestArticles = () => {
 
                 <SwiperSlide>
                     <div className="relative bg-white mb-[3rem] overflow-hidden">
-                        <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/06/gl-blog-img-2.jpg.webp" alt="Minimalist design furniture 2024" className="w-[17rem] h-[23rem] object-cover mx-auto md:mx-0" />
+                        <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/06/gl-blog-img-2.jpg.webp" alt="" className="w-[17rem] h-[23rem] object-cover mx-auto md:mx-0" />
                         <div className="absolute top-4 left-4 text-center bg-white px-3 py-2 h-[3rem] shadow">
                             <p className="text-sm font-semibold">23 JUL</p>
                         </div>
@@ -74,7 +74,7 @@ const LatestArticles = () => {
 
                 <SwiperSlide>
                     <div className="relative bg-white mb-[3rem] overflow-hidden">
-                        <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/06/gl-blog-img-3.jpg.webp" alt="Top 10 outdoor furniture trends" className="w-[17rem] h-[23rem] object-cover mx-auto md:mx-0" />
+                        <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/06/gl-blog-img-3.jpg.webp" alt="" className="w-[17rem] h-[23rem] object-cover mx-auto md:mx-0" />
                         <div className="absolute top-4 left-4 text-center bg-white px-3 py-2 h-[3rem] shadow">
                             <p className="text-sm font-semibold">05 SEP</p>
                         </div>
