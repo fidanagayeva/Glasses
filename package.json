@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "@firebase/auth": "^1.7.7",
+    "@stripe/stripe-js": "^4.4.0",
+    "and": "^0.0.3",
     "axios": "^1.7.5",
     "clsx": "^2.1.1",
     "cookies-next": "^4.2.1",
     "firebase": "^10.13.0",
     "formik": "^2.4.6",
     "next": "14.2.5",
+    "raw-body": "^3.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-firebase-hooks": "^5.1.1",
@@ -25,6 +28,7 @@
     "react-loading-skeleton": "^3.4.0",
     "react-toastify": "^10.0.5",
     "sass": "^1.77.8",
+    "stripe": "^16.9.0",
     "swiper": "^11.1.11",
     "swr": "^2.2.5",
     "yup": "^1.4.0"
