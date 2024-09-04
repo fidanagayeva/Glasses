@@ -180,7 +180,7 @@ const Header = () => {
             {user && (
               <div
                 id="userDropdown"
-                className="hidden absolute right-[-5rem] mt-2 w-48 bg-white border rounded shadow-lg p-4 z-50 opacity-100 transition-opacity duration-300"
+                className="hidden absolute right-[-5rem] pt-2 w-48 bg-white border rounded shadow-lg p-4 z-50 opacity-100 transition-opacity duration-300"
                 onMouseEnter={() => document.getElementById('userDropdown').classList.remove('hidden')}
                 onMouseLeave={() => document.getElementById('userDropdown').classList.add('hidden')}
               >
